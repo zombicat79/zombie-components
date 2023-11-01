@@ -1,0 +1,91 @@
+/* FONT ACQUISITION */
+@font-face {
+    font-family: RussoOne;
+    src: url("./public/fonts/RussoOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: SourceCodeMedium;
+    src: url("./public//fonts/SourceCodePro-Medium.ttf");
+}
+
+@font-face {
+    font-family: SourceCodeBold;
+    src: url("./public/fonts/SourceCodePro-Bold.ttf");
+}
+
+/* DEFAULT BROWSER CSS RESET */
+
+*, 
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    background-color: #fff;
+}
+
+html {
+    font-family: SourceCodeMedium;
+    font-size: 62.5%; /* 1rem equals to 10px */
+}
+
+/* APP CUSTOM STYLES
+--------------------- */
+
+/* --HEADER STYLES -- */
+.header {
+    height: 6rem;
+    background: linear-gradient(to bottom right, #393939, #000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.header__side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+.header__logo {
+    width: 100%;
+    max-width: 5rem;
+    margin-right: 1rem;
+}
+.header__title {
+    font-family: RussoOne;
+    font-size: 1.5rem;
+}
+/* --End of HEADER STYLES -- */
+
+/* --MAIN DISPLAY STYLES -- */
+.mainDisplay {
+    min-height: calc(100vh - 15rem);
+}
+/* --End of MAIN DISPLAY STYLES -- */
+
+/* --FOOTER STYLRES -- */
+.footer {
+    height: 10rem;
+    background: linear-gradient(to bottom right, #000, #393939);
+}
+/* --End of FOOTER STYLES -- */
